@@ -3,3 +3,8 @@ gen/
 lib/
 
 *~
+.classpath
+.settings/
+.metadata/
+project.properties
+
