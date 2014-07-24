@@ -1,14 +1,16 @@
 package in.mubble.animationtest;
 
 
-import android.animation.*;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationSet;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -147,11 +149,11 @@ public class MainActivity extends Activity {
     ussdscaleupy.setDuration(1000);
     
     // Save image translation Delay: 1000
-    ObjectAnimator save_translatey = ObjectAnimator.ofFloat(arrowView, "translationY", -45, arrow_ht);
-    save_translatey.setStartDelay(1000);
+    ObjectAnimator save_translatey = ObjectAnimator.ofFloat(arrowView, "translationY", -(.10f*viewht), (.02f*viewht));
+    save_translatey.setStartDelay(2000);
     save_translatey.setDuration(1000);
     
-    ObjectAnimator save_fade = ObjectAnimator.ofFloat(arrowView, "alpha",0.8f ,1f);
+    ObjectAnimator save_fade = ObjectAnimator.ofFloat(arrowView, "alpha",0f ,1f);
     save_fade.setDuration(1000);
     
     //Snap
