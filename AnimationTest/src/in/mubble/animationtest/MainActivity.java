@@ -140,10 +140,10 @@ public class MainActivity extends Activity {
     AnimatorSet animatorSet = new AnimatorSet();
     
     // USSD comes from bottom to mid screen 
-    ObjectAnimator scaleupx = ObjectAnimator.ofFloat(ussdView,"scaleX",1.8f);
+    ObjectAnimator scaleupx = ObjectAnimator.ofFloat(ussdView,"scaleX",1.7f);
     scaleupx.setDuration(400);
     
-    ObjectAnimator scaleupy = ObjectAnimator.ofFloat(ussdView,"scaleY",1.8f);
+    ObjectAnimator scaleupy = ObjectAnimator.ofFloat(ussdView,"scaleY",1.7f);
     scaleupy.setDuration(400);
     
     ObjectAnimator ussdTranslate = ObjectAnimator.ofFloat(ussdView,"translationY", viewht, (viewht/2));
@@ -171,26 +171,16 @@ public class MainActivity extends Activity {
     
     
     
-    // snapview Delay 1100 + Manual Delay: 100 => Total: 1200
     
-    ObjectAnimator snapTranslateX = ObjectAnimator.ofFloat(snapView, "translationX", -snap_x,0);
-    snapTranslateX.setStartDelay(1200);
-    snapTranslateX.setDuration(300);
     
-    ObjectAnimator snapTranslateY = ObjectAnimator.ofFloat(snapView, "translationY",box ,0);
-    snapTranslateY.setDuration(300);
-    
-    ObjectAnimator snapFade = ObjectAnimator.ofFloat(snapView, "alpha",0f ,1f);
-    snapFade.setDuration(300);
-    
-    // Overlay  Delay 1600
+ // Overlay  Delay 1100
     ObjectAnimator overlayx = ObjectAnimator.ofFloat(overlayView, "translationX",0 ,arrowlength);
-    overlayx.setStartDelay(1600);
+    overlayx.setStartDelay(1100);
     overlayx.setDuration(300);
     
-    // scaling along XY Delay 1900
+    // scaling along XY Delay 1400
     ObjectAnimator rotationxy = ObjectAnimator.ofFloat(overlayView, "rotation",45);
-    rotationxy.setStartDelay(1800);
+    rotationxy.setStartDelay(1300);
     rotationxy.setDuration(70);
     
     ObjectAnimator overlayxy = ObjectAnimator.ofFloat(overlayView, "translationX",arrowlength ,(.68f *arrow_wd));
@@ -199,14 +189,30 @@ public class MainActivity extends Activity {
     ObjectAnimator overlayy = ObjectAnimator.ofFloat(overlayView, "translationY",0 ,(.20f * ovrly_ht));
     overlayy.setDuration(70);
     
-    // scaling along Y Delay 1970
+    // scaling along Y Delay 1470
     ObjectAnimator rotationxyx = ObjectAnimator.ofFloat(overlayView, "rotation",90);
-    rotationxyx.setStartDelay(1770);
+    rotationxyx.setStartDelay(1270);
     rotationxyx.setDuration(300);
     
     ObjectAnimator overlayy1 = ObjectAnimator.ofFloat(overlayView, "translationY",(.20f * ovrly_ht) ,(ovrly_ht));
     overlayy1.setDuration(400);
+   
     
+    
+    
+    // snapview Delay 1870 + Manual Delay: 100 
+    
+    ObjectAnimator snapTranslateX = ObjectAnimator.ofFloat(snapView, "translationX", -snap_x,0);
+    snapTranslateX.setStartDelay(1970);
+    snapTranslateX.setDuration(300);
+    
+    ObjectAnimator snapTranslateY = ObjectAnimator.ofFloat(snapView, "translationY",box ,0);
+    snapTranslateY.setDuration(300);
+    
+    ObjectAnimator snapFade = ObjectAnimator.ofFloat(snapView, "alpha",0f ,1f);
+    snapFade.setDuration(300);
+    
+     
     ObjectAnimator hint_appear = ObjectAnimator.ofFloat(enable_hint, "alpha",0f, 1f);
     hint_appear.setStartDelay(2370);
     hint_appear.setDuration(1);
@@ -222,10 +228,11 @@ public class MainActivity extends Activity {
     
     animatorSet.play(scaleupx).with(scaleupy).with(ussdTranslate).with(ussdTranslatex).with(ussdFade);
     animatorSet.play(scaledownx).with(scaledowny).with(ussdtranslate_topx).with(ussdtranslate_topy);
-    animatorSet.play(snapTranslateX).with(snapTranslateY).with(snapFade);
     animatorSet.play(overlayx);  
     animatorSet.play(rotationxy).before(overlayxy).with(overlayy);
     animatorSet.play(rotationxyx).with(overlayy1);
+    
+    animatorSet.play(snapTranslateX).with(snapTranslateY).with(snapFade);
     animatorSet.play(hint_appear).with(priv_appear).with(enable_button);
     animatorSet.start();
     
