@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Balance Inbox</string>
+    <string name="uri_scheme">ussd</string>
+    <string name="uri_authority">cd</string>
+    <string name="uri_path">/</string>
+    <string name="uri_param_name">uval</string>
+    <string name="balalce_assistant">Balance Assistant</string>
+    <string name="title_activity_main">Bill By Two</string>
+    <string name="card_activate_accessibility">        Touch to enable Balance Assistant.</string>
+    <string name="activate_accessibility_settings">        Please enable Balance Assistant under Services to allow us to read your phone balance.</string>
+    <string name="accessibility_service_description">        Please enable Balance Assistant so that we can read your phone balance.</string>
+    <string name="refresh_action">Refresh</string>
+    <string name="logout_action">Logout</string>
+    <string name="message_column">Message</string>
+    <string name="error_loading_messages">Loading messages failed</string>
+    <string name="no_messages">Balance Inbox is waiting for you to make any kind of usage (call, sms or data) on this SIM</string>
+    <string name="title_home">Home</string>
+    <string name="title_messages">Messages</string>
+    <string name="title_call">Call</string>
+    <string name="title_sms">SMS</string>
+    <string name="title_data">Data</string>
+    <string name="title_pack">Packs</string>
+    <string name="page_today">This Day</string>
+    <string name="page_week">Past Week</string>
+    <string name="page_month">Past Month</string>
+    <string name="page_pack_data">Data Pack</string>
+    <string name="page_pack_sms">SMS Pack</string>
+    <string name="page_pack_cutter">Rate Cutter</string>
+    <string name="page_pack_talktime">Talktime</string>
+    <string name="page_today_message">Statistics of This Day</string>
+    <string name="page_week_message">Statistics of Past Week</string>
+    <string name="page_month_message">Statistics of Past Month</string>
+    <string name="page_pack_data_message">All Data Pack are here</string>
+    <string name="page_pack_sms_message">All SMS Pack are here</string>
+    <string name="page_pack_cutter_message">All Rate Cutter are here</string>
+    <string name="page_pack_talktime_message">All Talktime are here</string>
+
+    <!-- AuthenticatorActivity -->
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="message_signing_in">Signing in…</string>
+    <string name="blank_field_warning">Please populate this field</string>
+    <string name="signup_link">New to Bootstrap? &lt;a href=http://www.androidbootstrap.com>Click here&lt;/a> to learn more.</string>
+    <string name="message_bad_credentials">Email Address or Password is incorrect</string>
+    <string name="message_auth_failed">Please enter a valid password</string>
+    <string name="message_auth_failed_new_account">Please enter a valid email address &amp; password</string>
+    <string name="home">Home</string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Close</string>
+    <string name="title_activity_permission">Enable Balance Inbox</string>
+
+    <!-- Permission Acticity -->
+
+    <string name="perm_terms_and_privacy">By clicking "Enable" button, you accept our <a>terms and conditions of usage</a> and <a>privacy policy</a>.</string>
+    <string name="perm_hint">Enable "copy to balance inbox service" so we can copy SIM balance info to your balance inbox.</string>
+    <string name="perm_enable_btn">Enable</string>
+    <string name="find_service_toast">Please find and enable the "Balance Assistent". Once done, press the back button to return to Balance Inbox app.</string>
+    
+    
+    <!-- Splash Activity -->
+    <string name="splash_copyright">\u00A9 Mubble Networks Pvt Ltd, 2014</string>
+    <string name="splash_app_info">A simple inbox to organize your balance information of your prepaid SIM cards.</string>
+    <string name="splash_country">India</string>
+    
+    
+    <!-- NeedsRestart Activity -->
+    <string name="restart_title">One Last Thing</string>
+    <string name="restart_hint1">Your phone needs to be restarted once for "Copy to Balance Inbox" service to start working.</string>
+    <string name="restart_hint2">Balance Inbox will start working after you switch off your phone and then turn it back on.</string>
+    <string name="restart_accept_button">Got it</string>
+    
+    
+    <!-- NoUsageHistory Acticity -->
+    <string name="greetings">Congratulation</string>
+    <string name="bi_setup_success">You have successfully setup Balance Inbox on this phone!</string>
+    <string name="bi_support">Balance Inbox currently supports only prepaid GSM SIMs. Support for postpaid or CDMA SIMs will be added in future updates.</string>
+    <string name="bi_waiting">Balance Inbox is now waiting for you to use a prepaid GSM SIM for phone call, sms or internet. </string>
+    
+    <!-- Home Activity -->
+    <string name="sim_title">Sim-XXXX</string>
+    <string name="sim_carrier">Carrier</string>
+    <string name="balance_info_empty">Tap on SIM title to setup this SIM. You will then start seeing balance info here.</string>
+    
+    <string name="inbox_title">Inbox</string>
+    <string name="inbox_empty">Balance Inbox is waiting for you to make any kind of usage (call, sms or data) on this SIM</string>
+    
+    <string name="primary_title">Balance</string>
+    <string name="primary_label_left">Today</string>
+    <string name="primary_label_right">Last</string>
+    <string name="secondary_title">Data Left</string>
+    <string name="secondary_label_left">Today</string>
+    <string name="secondary_label_right">Expiry</string>
+    
+    <string name="more_button">...More</string>
+    
+    <!-- Inbox Activity -->
+    <string name="title_activity_inbox">Inbox</string>
+    
+    <!-- Drawer List Items -->
+    <string-array name="drawer_items">
+      <item >Item 1</item>
+      <item >Item 2</item>
+      <item >Item 3</item>
+      <item >Item 4</item>
+      <item >Item 5</item>  
+    </string-array>
+    
+    <string name="DRAWER_OPEN">drawer_open</string>
+    <string name="DRAWER_CLOSE">drawer_close</string>
+    
+    
+</resources>

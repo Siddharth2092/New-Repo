@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources >
+   <color name="mu_blue_1">#D7FFFF</color>
+   <color name="mu_blue_2">#BEFFFF</color>
+   <color name="mu_blue_3">#A5FFFF</color>
+   <color name="mu_blue_4">#8BFFFF</color>
+   <color name="mu_blue_5">#72D1F7</color>
+   <color name="mu_blue_6">#58B7DD</color>
+   <color name="mu_grey_1">#F3F3F3</color>
+   <color name="mu_grey_2">#DADADA</color>
+   <color name="mu_grey_3">#C1C1C1</color>
+   <color name="mu_grey_4">#A7A7A7</color>
+   <color name="mu_grey_5">#8E8E8E</color>
+   <color name="mu_grey_6">#747474</color>
+   
+   <color name="overlay_grey">#DADADA</color>
+   <color name="overlay_white">#AAFFFFFF</color>
+   <color name="overlay_fragment">#000000</color>
+   
+   
+   <dimen name="mu_margin_very_small">5dp</dimen>
+   <dimen name="mu_margin_small">10dp</dimen>
+   <dimen name="mu_margin_medium">15dp</dimen>
+   <dimen name="mu_margin_large">20dp</dimen>
+   <dimen name="mu_margin_very_large">25dp</dimen>
+   
+</resources>

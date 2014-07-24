@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <color name="Splash_grey">#F3F3F3</color>
+		<string name="image">Image</string>
+		<string name="Balance_Inbox">Balance Inbox</string>
+		<string name="India">India</string>
+    
+
+</resources>

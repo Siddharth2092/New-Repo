@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Notification</string>
+    <string name="hello_world">Main Activity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="title_activity_action">ActionActivity</string>
+
+</resources>

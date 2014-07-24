@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">Customlistview</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="image">Image</string>
+  <string name="title_activity_diaolog_box">Diaolog_box</string>	
+  
+  <string-array name="text"> 
+   	<item>Nokia Oyj is a Finnish communications and information technology multinational corporation that is headquartered in Espoo, Uusimaa.</item>
+    <item>Samsung Group is a South Korean multinational conglomerate company headquartered in Samsung Town, Seoul</item>
+    <item>Sony Mobile Communications AB is a multinational mobile phone manufacturing company headquartered in Tokyo, Japan, and Lund, Sweden, and is a wholly owned subsidiary of Sony Corporation.</item>
+    <item>Reliance Communications Ltd. is an Indian Internet access and telecommunications company headquartered in Navi Mumbai, India.</item>
+    <item>BlackBerry Limited, formerly known as Research In Motion Limited, is a Canadian telecommunication and wireless equipment company best known to the general public as the developer of the BlackBerry.</item>
+    <item>Apple Inc. is an American multinational corporation headquartered in Cupertino, California, that designs, develops, and sells consumer electronics.</item>
+    <item>LG Electronics Inc. is a South Korean multinational electronics company headquartered in Yeouido-dong, Seoul, and a member of the LG chaebol.</item>
+    <item>Motorola Mobility makes Android smartphones and Bluetooth accessories to keep people connected.</item>
+  </string-array>
+
+  <string-array name="Manufacturers">
+    <item>NOKIA</item>
+    <item>Samsung</item>
+    <item>SONY</item>
+    <item>Reliance</item>
+    <item>Blackberry</item>
+    <item>Apple</item>
+    <item>LG</item>
+    <item>Motorola</item>
+  </string-array>
+
+</resources>

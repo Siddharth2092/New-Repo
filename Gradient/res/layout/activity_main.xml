@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/in.mubble.gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.mubble.gradient.MainActivity"
+   
+    
+     >
+  
+ 
+      
+
+      <RelativeLayout 
+        android:id="@+id/rel1"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Splash_grey"
+        >
+        
+        <ImageView 
+            android:contentDescription="@string/image"
+            android:id="@+id/imgvw"
+            android:layout_alignParentTop="true"
+            android:paddingTop="20dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/app_icon"
+            android:layout_centerInParent="true"> </ImageView>
+
+        <TextView
+            android:id="@+id/txtvw1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgvw"
+            android:layout_centerInParent="true"
+            android:paddingTop="30dp"
+            android:text="@string/Balance_Inbox"
+            android:textSize="40sp"
+            android:textColor="#FF424242"
+            android:fontFamily="sans-serif-light">
+                      
+        </TextView>
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtvw1"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:text="@string/India"
+            android:textSize="20sp"
+            android:textColor="#FF747474" >
+
+        </TextView>
+        
+        </RelativeLayout> 
+    
+</LinearLayout>  
