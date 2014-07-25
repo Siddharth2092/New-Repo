@@ -107,9 +107,9 @@
       <item >Item 4</item>
       <item >Item 5</item>  
     </string-array>
-    
+    <string name="sample_string"><![CDATA[some test line 1 <br />some test line 2]]></string>
     <string name="DRAWER_OPEN">drawer_open</string>
     <string name="DRAWER_CLOSE">drawer_close</string>
-    
+	<dimen name="text">20sp</dimen>    
     
 </resources>
