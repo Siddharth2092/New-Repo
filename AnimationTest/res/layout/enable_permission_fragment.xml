@@ -37,15 +37,13 @@
     android:layout_marginRight="@dimen/mu_margin_small"
     android:layout_marginBottom="@dimen/mu_margin_small" />
 
-  <LinearLayout
+  <FrameLayout
     android:id = "@+id/anim_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_above="@id/enable_hint"
     android:orientation="vertical" >
-    
-  	        
-  </LinearLayout>
+  </FrameLayout>
 
     
 </RelativeLayout>
