@@ -6,29 +6,33 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
   private View animview;
   
-  private ImageView ussdView;
+  private RelativeLayout ussdView;
   private ImageView snapView;
   private ImageView arrowView;
   private int flag=1;
   
-  private int ussd_x, ussd_y,ussd_ht, ussd_wd, ovrly_x, ovrly_y, ovrly_ht, overly_wd,
-              snap_x, snap_y,snap_ht, snap_wd, arrow_x, arrow_y, arrow_ht, arrow_wd,viewht, viewwd;
+  private int ussd_x, ussd_y,ussd_ht, ussd_wd, ovrly_x, ovrly_y, ovrly_ht, overly_wd, line_wd,
+  snap_x, snap_y,snap_ht, snap_wd, arrow_x, arrow_y, arrow_ht, arrow_wd, viewht, viewwd;
   
-  private TextView terms_priv, enable_hint;
+  private TextView terms_priv, enable_hint, ussd_content, ok_button, line;
   private Button enable_btn;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -44,16 +48,46 @@ public class MainActivity extends Activity {
     vh     = (int)(vh/2);
     viewht = vh;
     
-    ussdView    = new ImageView(this);
+    ussdView    = new RelativeLayout(this);
     snapView    = new ImageView(this);
     arrowView   = new ImageView(this);
     
     
-    setDimensions(   ussdView, vw, vw, 40, 40, 30, 10, 0, 0);
+    setDimensions(   ussdView, vw, vw, 45, 40, 30, 10, 0, 0);
     setDimensions(  arrowView, vw, vh, 20, 20, 40, 10, 0, 0);
     setDimensions(   snapView, vw, vh, 50, 70, 25, 10, 0, 0);
     
-    ussdView.setImageResource(R.drawable.first_use_ussd);
+    ussdView.setBackgroundColor(Color.BLACK);
+    
+    ussd_content = new TextView(this);
+    ussd_content.setText("Last call charge for 00:00:05 sec from Main   Bal:0.030. Available Main Bal: Rs. 32.433, 10-09-2026, 42000 local secs for 28days recharge 201");
+    ussd_content.setPadding(5, 0, 0, 0);
+    ussd_content.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
+    ussd_content.setTextColor(Color.WHITE);
+    ussd_content.setId(1);
+    RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+    lay.addRule(RelativeLayout.ALIGN_PARENT_TOP);
+    ussdView.addView(ussd_content, lay);
+   
+    line = new TextView(this);
+    line.setBackgroundColor(Color.WHITE);
+    line.setId(2);
+    line_wd = (int)(.95*ussd_wd);
+    line.setGravity(1);
+    RelativeLayout.LayoutParams lay1 = new RelativeLayout.LayoutParams(line_wd, 1);
+    lay1.addRule(RelativeLayout.BELOW, ussd_content.getId());
+    ussdView.addView(line, lay1);
+    
+    ok_button = new TextView(this);
+    ok_button.setText("OK");
+    ok_button.setPadding(0, 5, 0, 0);
+    ok_button.setTextColor(Color.WHITE);
+    ok_button.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
+    ok_button.setGravity(Gravity.CENTER);
+    RelativeLayout.LayoutParams lay2 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+    lay2.addRule(RelativeLayout.BELOW, line.getId());
+    ussdView.addView(ok_button, lay2);
+    
     arrowView.setImageResource(R.drawable.save);
     snapView.setImageResource(R.drawable.first_use_snap);
     
